@@ -14,7 +14,7 @@ public class Constants {
 
     public static final String MOVIE_ID = "movie_id";
     public static final String SERIES_ID = "series_id";
-    public static final String PERSON_ID = "person_id";
+
 
     public static final String VIEW_ALL_MOVIES_TYPE = "type_view_all_movies";
     public static final int POPULAR_MOVIES_TYPE = 1;

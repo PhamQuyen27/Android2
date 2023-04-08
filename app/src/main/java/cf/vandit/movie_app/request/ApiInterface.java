@@ -1,6 +1,6 @@
 package cf.vandit.movie_app.request;
 
-import cf.vandit.movie_app.network.cast.Person;
+
 import cf.vandit.movie_app.network.movie.GenreMoviesResponse;
 import cf.vandit.movie_app.network.movie.SimilarMoviesResponse;
 import cf.vandit.movie_app.network.movie.Movie;
@@ -76,9 +76,5 @@ public interface ApiInterface {
 
     @GET("tv/{id}/season/{season}")
     Call<SeasonDetailsResponse> getSeasonDetails(@Path("id") Integer id, @Path("season") Integer season_number, @Query("api_key") String apiKey);
-
-    // Cast
-    @GET("person/{id}")
-    Call<Person> getPersonDetails(@Path("id") Integer personId, @Query("api_key") String apiKey);
 
 }
