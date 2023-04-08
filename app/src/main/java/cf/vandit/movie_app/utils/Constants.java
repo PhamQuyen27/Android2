@@ -4,8 +4,8 @@ public class Constants {
     public static final String API_KEY = "27e3c7b518c8e230a54cad97321c9364";
     public static final String YOUTUBE_API_KEY = "AIzaSyDvIMRSVE0nl4pCDCj-JdBkuY8kG86AEqA";
     public static final String BASE_URL = "https://api.themoviedb.org/3/";
-    public static final String MOVIE_STREAM_URL = "https://gomo.to/movie/";
-    public static final String SERIES_STREAM_URL = "https://gomo.to/show/";
+    public static final String MOVIE_STREAM_URL = "https://movies7.to/movies";
+    public static final String SERIES_STREAM_URL = "https://movies7.to/tv-series";
     public static final String IMAGE_LOADING_BASE_URL_1280 = "https://image.tmdb.org/t/p/w1280/";
     public static final String IMAGE_LOADING_BASE_URL_342 = "https://image.tmdb.org/t/p/w342/";
     public static final String IMAGE_LOADING_BASE_URL_780 = "https://image.tmdb.org/t/p/w780/";
@@ -14,7 +14,7 @@ public class Constants {
 
     public static final String MOVIE_ID = "movie_id";
     public static final String SERIES_ID = "series_id";
-    public static final String PERSON_ID = "person_id";
+
 
     public static final String VIEW_ALL_MOVIES_TYPE = "type_view_all_movies";
     public static final int POPULAR_MOVIES_TYPE = 1;
