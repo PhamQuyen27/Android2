@@ -39,10 +39,6 @@
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".activities.CastActivity"
-            android:exported="false"
-            android:screenOrientation="portrait"/>
-        <activity
             android:name=".activities.YoutubeActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="false" />
