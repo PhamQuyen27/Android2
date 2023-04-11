@@ -1,7 +1,10 @@
 package com.example.streamingapp_nhom12.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +15,7 @@ import com.example.streamingapp_nhom12.fragments.FavouritesFragment;
 import com.example.streamingapp_nhom12.fragments.MovieFragment;
 import com.example.streamingapp_nhom12.fragments.SearchFragment;
 import com.example.streamingapp_nhom12.fragments.SeriesFragment;
+import com.example.streamingapp_nhom12.fragments.SettingsFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
@@ -19,7 +23,6 @@ public class HomeActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
     Toolbar toolbar;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +41,7 @@ public class HomeActivity extends AppCompatActivity {
                     case R.id.nav_movie:
                         if (!getSupportFragmentManager().findFragmentById(R.id.fragment_container).getClass().getSimpleName().equals("MovieFragment")) {
                             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MovieFragment()).commit();
-                            toolbar.setTitle("Movies");
+                            toolbar.setTitle("Moviess");
                         }
                         break;
                     case R.id.nav_series:
@@ -59,9 +62,20 @@ public class HomeActivity extends AppCompatActivity {
                             toolbar.setTitle("Favourites");
                         }
                         break;
+                    case R.id.nav_settings:
+                        if (!getSupportFragmentManager().findFragmentById(R.id.fragment_container).getClass().getSimpleName().equals("SettingsFragment")) {
+                            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
+                            toolbar.setTitle("Settings");
+
+                        }
+                        break;
                 }
                 return true;
             }
         });
+
+
+
+
     }
 }
