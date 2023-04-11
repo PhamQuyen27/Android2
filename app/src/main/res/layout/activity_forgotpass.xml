@@ -9,14 +9,17 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/search_outline"
         android:gravity="center"
-        android:orientation="vertical"
-        android:layout_centerInParent="true">
+        android:orientation="vertical">
+
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/movie_logo_foreground"
-            android:layout_marginBottom="20dp"/>
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/movie_logo_foreground" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -24,16 +27,17 @@
             android:text="FORGOT PASSWORD"
             android:textColor="@color/orange"
             android:textSize="20dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/txtUsername"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="46dp"
             android:layout_marginBottom="20dp"
-            android:backgroundTint="#fff"
+            android:background="@drawable/search_outline"
             android:ems="15"
             android:hint="Your email"
+            android:padding="10dp"
             android:textColor="#fff"
             android:textColorHint="#FFFFFF"
             android:textSize="20dp" />
@@ -42,11 +46,11 @@
             android:id="@+id/btnLogin"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Send code"
-            android:textStyle="bold"
-            android:textColor="#fff"
+            android:layout_marginBottom="15dp"
             android:backgroundTint="@color/orange"
-            android:layout_marginBottom="15dp"/>
+            android:text="Send code"
+            android:textColor="#fff"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
